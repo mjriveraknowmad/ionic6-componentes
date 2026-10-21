@@ -18,6 +18,7 @@ Usa  `cordova-res --skip-config --copy` para generar el icono de tu app y pantal
 ## añadir las páginas
 `ionic g page pages/inicio `
 `ionic g page pages/alert `
+`ionic g page pages/action-sheet`
 
 
 ## Más documentación
