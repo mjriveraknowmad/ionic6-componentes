@@ -7,11 +7,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Componentes</ion-title>
+      <ion-title size="large" color="primary">Componentes</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-list>
+    <ion-item *ngFor="let componente of componentes" [routerLink]="componente.redirectTo" detail>
+      <ion-icon [name]="componente.icon" slot="start" color="primary"></ion-icon>
+      <ion-label>{{ componente.name }}</ion-label>
+    </ion-item>
 
-  <ion-button routerLink="/alert">Alert</ion-button>
-  <ion-button routerLink="/action-sheet">Action Sheet</ion-button>
+  </ion-list>
+
 
 </ion-content>
